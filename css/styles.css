@@ -1,0 +1,201 @@
+a {
+  text-decoration: none;
+}
+
+.uvu::after {
+  display: block;
+  content: '';
+  width: 270px;
+  height: 260px;
+  top: 0%;
+  left: 0%;
+  background-color: rgba(255, 255, 0, 0.2);
+  position: absolute;
+  transform: translateX(0%);
+  transition: transform 255ms ease;
+}
+
+.uvu {
+  position: relative;
+  overflow: hidden;
+}
+
+.ovo:hover .uvu::after {
+  transform: translateX(100%);
+}
+
+.team {
+  display: flex;
+}
+
+.button-main {
+  color: white;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  letter-spacing: 0.06em;
+  margin: 0 auto;
+  display: block;
+  padding: 10px 32px;
+  border-radius: 4px;
+  background: black;
+  position: relative;
+  overflow: hidden;
+}
+
+.button-main:hover {
+  background-color: blue;
+}
+
+.button-main::before {
+  display: block;
+  content: '';
+  width: 20px;
+  height: 20px;
+  top: 12px;
+  left: 8px;
+  background-color: red;
+  position: absolute;
+  transform: translateY(-42px);
+  transition: transform 500ms ease;
+}
+
+.button-main:hover::before {
+  transform: translateY(0);
+}
+
+.button-main::after {
+  display: block;
+  content: '';
+  width: 20px;
+  height: 20px;
+  top: 12px;
+  left: 8px;
+  background-color: blue;
+  position: absolute;
+  transform: translateY(0);
+  transition: transform 500ms ease;
+}
+
+.button-main:hover::after {
+  transform: translateY(42px);
+}
+
+.studio::after {
+  display: block;
+  content: '';
+  width: 100%;
+  /* width: 0%; */
+  height: 4px;
+  bottom: -10px;
+  left: 0px;
+  background-color: blue;
+  position: absolute;
+  transform: scale(0);
+  transition: transform 500ms ease;
+}
+
+.studio:hover::after {
+  transform: scale(1);
+  /* width: 100%; */
+}
+
+.studio {
+  position: relative;
+}
+
+.studio-nav {
+  display: flex;
+  gap: 100px;
+  list-style: none;
+  text-decoration: none;
+}
+
+.box-test {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 50px;
+  width: auto;
+  height: auto;
+  background-color: blanchedalmond;
+  border: 2px solid black;
+}
+
+.box-test-inside {
+  display: block;
+  justify-content: center;
+  align-content: center;
+  width: auto;
+  height: auto;
+  background-color: aquamarine;
+  border: 2px solid black;
+}
+
+.photo-1:hover {
+  transform: perspective(300px) rotateY(15deg);
+}
+
+.photo-2:hover {
+  transform: perspective(300px) rotateX(15deg);
+}
+
+.photo-3 {
+  transform: scale(1);
+  transition: transform 5000ms ease;
+}
+
+.photo-3:hover {
+  transform: scale(0.2);
+}
+
+.photo-4 {
+  transition: transform 5000ms ease;
+}
+
+.photo-4:hover {
+  transform: rotate(90deg);
+}
+
+.oleg {
+  color: tomato;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.oleg:hover {
+  color: blue;
+}
+
+.link {
+  text-decoration: none;
+  list-style: none;
+}
+
+.bloc {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.ttt {
+  list-style: none;
+}
+
+#particles-js {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
