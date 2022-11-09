@@ -1,10 +1,10 @@
 particlesJS('particles-js', {
   particles: {
-    number: { value: 400, density: { enable: true, value_area: 800 } },
-    color: { value: '#fff' },
+    number: { value: 200, density: { enable: true, value_area: 300 } },
+    color: { value: '#ffa500' },
     shape: {
-      type: 'circle',
-      stroke: { width: 0, color: '#000000' },
+      type: 'star',
+      stroke: { width: 0, color: '#00000' },
       polygon: { nb_sides: 5 },
       image: { src: 'img/github.svg', width: 100, height: 100 },
     },
